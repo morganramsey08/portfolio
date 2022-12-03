@@ -2,42 +2,67 @@
 
 .nav-wrapper {
   border-bottom: 1px solid $grey-62;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
   justify-content: center;
-  padding: 25px 0;
   width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+  z-index: 3;
 
-  .logo {
-    align-self: flex-start;
+  &.hidden {
+    top: -75px;
   }
 
-  nav {
-    align-self: center;
-    display: inline-flex;
+  &.solid-bg {
+    background-color: white;
+  }
+
+  .nav-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding: 15px 40px;
     margin: 0 auto;
+    max-width: 1200px;
 
-    a {
-      color: $copy;
-      margin: 0 30px;
-      text-decoration: none;
-      transition: all 0.2s ease-in;
+    @include for-big-desktop-up {
+      max-width: 1600px;
+    }
 
-      &:hover {
-        color: $brand-blue;
-        transform: translateY(-2px);
+    .logo {
+      text-align: left;
+    }
+
+    nav {
+      align-self: center;
+      display: inline-flex;
+      margin: 0 auto;
+
+      a {
+        color: $copy;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.04rem;
+        margin: 0 30px;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $brand-blue;
+          transform: translateY(-2px);
+        }
       }
     }
-  }
 
-  .hire-me {
-    align-self: flex-end;
-    background: $brand-blue;
-    border-radius: 8px;
-    color: white;
-    font-size: 0.875rem;
-    font-weight: 700;
-    padding: 13px 20px;
-    width: 90px;
+    .hire-me {
+      background: $brand-blue;
+      border-radius: 8px;
+      color: white;
+      font-size: 0.875rem;
+      font-weight: 700;
+      justify-self: flex-end;
+      padding: 13px 20px;
+      width: 90px;
+    }
   }
 }

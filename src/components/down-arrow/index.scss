@@ -1,0 +1,85 @@
+@import "../../styles/mixins.scss";
+
+$bezier: cubic-bezier(0.77, 0, 0.175, 1);
+$anim-timing: 3s;
+
+.arrow {
+  animation: slideDown $anim-timing $bezier forwards infinite;
+  position: relative;
+  left: auto;
+  transform: translateZ(0);
+  transform-origin: bottom;
+  z-index: 2;
+
+  &::before {
+    animation: colorChange $anim-timing $bezier forwards infinite;
+
+    position: absolute;
+    left: 110px;
+    margin-left: -1px;
+    width: 10px;
+    height: 100px;
+    background: white;
+    content: " ";
+    top: -59px;
+    border-radius: 10px;
+  }
+
+  &::after {
+    animation: colorChange $anim-timing $bezier forwards infinite;
+
+    content: "";
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    transform: rotate(135deg);
+    left: 89px;
+    position: absolute;
+    border-radius: 4px;
+    top: -5px;
+  }
+}
+
+.circle {
+  background-color: $brand-blue;
+  border-radius: 100px;
+  height: 130px;
+  margin-left: 50px;
+  position: relative;
+  top: -50px;
+  width: 130px;
+  z-index: 1;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    filter: none;
+  }
+
+  50% {
+    filter: invert(37%) sepia(16%) saturate(1148%) hue-rotate(180deg)
+      brightness(73%) contrast(147%);
+  }
+
+  100% {
+    filter: none;
+  }
+}

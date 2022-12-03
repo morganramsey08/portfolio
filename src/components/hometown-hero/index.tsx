@@ -1,4 +1,5 @@
 import React from "react";
+import DownArrow from "../down-arrow/index.tsx";
 import "./index.scss";
 
 const stats = [
@@ -26,6 +27,7 @@ const HomeTownHero = () => {
           ))}
         </div>
       </div>
+      <DownArrow />
     </div>
   );
 };

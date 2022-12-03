@@ -16,9 +16,13 @@
     align-items: center;
     display: flex;
     margin: 100px auto;
-    padding: 0 20px;
+    padding: 0 40px;
     text-align: left;
-    width: 1600px;
+    max-width: 1200px;
+
+    @include for-big-desktop-up {
+      max-width: 1600px;
+    }
   }
 
   .intro {
@@ -31,20 +35,26 @@
 
     .sub {
       font-family: "Sanchez", serif;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 
   .stats {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 90px;
+
+    @include for-big-desktop-up {
+      margin-right: 140px;
+    }
 
     .stat {
-      margin: 0 0 40px 0;
+      margin: 0 0 45px 0;
+
       .number {
         display: block;
+        margin-bottom: 6px;
       }
     }
   }
