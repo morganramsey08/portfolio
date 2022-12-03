@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+
+.nav-wrapper {
+  border-bottom: 1px solid $grey-62;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  justify-content: center;
+  padding: 25px 0;
+  width: 100%;
+
+  .logo {
+    align-self: flex-start;
+  }
+
+  nav {
+    align-self: center;
+    display: inline-flex;
+    margin: 0 auto;
+
+    a {
+      color: $copy;
+      margin: 0 30px;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: $brand-blue;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .hire-me {
+    align-self: flex-end;
+    background: $brand-blue;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 13px 20px;
+    width: 90px;
+  }
+}
