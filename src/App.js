@@ -36,11 +36,9 @@ function App() {
   return (
     <div className="App">
       <NavBar visible={visible} insideThePage={insideThePage} />
-      <div className="container">
-        <HomeTownHero />
-        <CurvedBox />
-        <PortfolioWork />
-      </div>
+      <HomeTownHero />
+      <CurvedBox />
+      <PortfolioWork />
       <ContactComponent />
     </div>
   );

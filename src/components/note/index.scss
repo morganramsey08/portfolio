@@ -9,12 +9,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 
   &.red {
     color: $red;
   }
 
-  img {
+  svg {
     display: flex;
+    margin-bottom: 20px;
+
+    &.whiteArrow {
+      path {
+        stroke: white;
+        stroke-opacity: 1;
+      }
+    }
+
+    &.reverseArrow {
+      transform: scaleX(-1);
+    }
   }
 }

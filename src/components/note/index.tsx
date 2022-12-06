@@ -1,28 +1,33 @@
 import React from "react";
 import classnames from "classnames";
-import arrow from "../../img/hand-drawn-arrow.svg";
 import "./index.scss";
 
 interface noteProps {
-  red: boolean;
-  noteCopy: string;
-  top: string;
-  right: string;
-  bottom: string;
-  left: string;
-  rotate: string;
-  rotateArrow: string;
+  alignItems?: string;
+  red?: boolean;
+  noteCopy?: string;
+  top?: string;
+  right?: string;
+  bottom?: string;
+  left?: string;
+  reverseArrow?: boolean;
+  rotate?: string;
+  rotateArrow?: string;
+  whiteArrow?: boolean;
 }
 
 const PostItNote = ({
+  alignItems,
   red,
   noteCopy,
   top,
   right,
   bottom,
   left,
+  reverseArrow,
   rotate,
   rotateArrow,
+  whiteArrow,
 }: noteProps) => {
   return (
     <div
@@ -35,13 +40,27 @@ const PostItNote = ({
         bottom: `${bottom}`,
         left: `${left}`,
         rotate: `${rotate}`,
+        alignItems: `${alignItems}`,
       }}
     >
-      <img
-        src={arrow}
+      <svg
+        className={classnames({
+          reverseArrow: reverseArrow,
+          whiteArrow: whiteArrow,
+        })}
         style={{ rotate: `${rotateArrow}` }}
-        alt="Check out this css"
-      />
+        width="51"
+        height="71"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.268 20.468c17.762.718 52.246 11.637 48.085 49.57M1.268 20.467L24 1.5M1.268 20.468l9.32 29.445"
+          stroke="red"
+          stroke-opacity=".47"
+          stroke-width="2"
+        />
+      </svg>
       {noteCopy}
     </div>
   );

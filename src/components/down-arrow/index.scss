@@ -3,6 +3,10 @@
 $bezier: cubic-bezier(0.77, 0, 0.175, 1);
 $anim-timing: 4s;
 
+.down-arrow-component {
+  position: relative;
+}
+
 .arrow {
   animation: slideDown $anim-timing $bezier forwards infinite normal;
   position: relative;
@@ -50,7 +54,7 @@ $anim-timing: 4s;
   height: 130px;
   margin-left: 50px;
   position: relative;
-  top: -100px;
+  top: -60px;
   width: 130px;
   z-index: 1;
 }

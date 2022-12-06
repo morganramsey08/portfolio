@@ -1,4 +1,5 @@
 import React from "react";
+import PostItNote from "../note/index.tsx";
 import { Portfolio } from "./data.js";
 import "./index.scss";
 
@@ -13,6 +14,16 @@ const PortfolioWork = () => {
           </span>
         </div>
         <div className="code-cta">
+          <PostItNote
+            alignItems="flex-end"
+            red
+            noteCopy="if you want to see the code"
+            left="54px"
+            bottom="122px"
+            rotate="16deg"
+            rotateArrow="30deg"
+            reverseArrow
+          />
           <a
             href="https://github.com/morganramsey08/portfolio"
             className="button primary"

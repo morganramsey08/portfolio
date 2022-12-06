@@ -1,6 +1,5 @@
 import React from "react";
 import DownArrow from "../down-arrow/index.tsx";
-import PostItNote from "../note/index.tsx";
 import "./index.scss";
 
 const stats = [
@@ -29,14 +28,6 @@ const HomeTownHero = () => {
         </div>
       </div>
       <DownArrow />
-      <PostItNote
-        red
-        noteCopy="inspect that (pure css)"
-        left="80px"
-        bottom="-20px"
-        rotate="-20deg"
-        rotateArrow="30deg"
-      />
     </div>
   );
 };

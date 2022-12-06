@@ -10,7 +10,16 @@
   .contact-wrapper {
     margin: 300px auto 100px;
     padding: 0 40px;
+    position: relative;
     width: 1600px;
+
+    .post-it-note {
+      img {
+        svg {
+          fill: white;
+        }
+      }
+    }
 
     h2 {
       font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
