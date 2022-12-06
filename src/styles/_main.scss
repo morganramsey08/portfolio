@@ -1,0 +1,14 @@
+a {
+  &.button {
+    border-radius: 8px;
+    color: white;
+    display: inline-flex;
+    font-family: "proxima_nova_bold";
+    padding: 15px 20px;
+    text-decoration: none;
+
+    &.primary {
+      background-color: hsla(219, 82%, 57%, 1);
+    }
+  }
+}

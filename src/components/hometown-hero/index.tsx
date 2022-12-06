@@ -1,5 +1,6 @@
 import React from "react";
 import DownArrow from "../down-arrow/index.tsx";
+import PostItNote from "../note/index.tsx";
 import "./index.scss";
 
 const stats = [
@@ -19,7 +20,7 @@ const HomeTownHero = () => {
           <span className="sub">FrontEnd Devloper & Designer</span>
         </div>
         <div className="stats">
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <div className="stat">
               <span className="number">{stat.number}</span>
               <span className="title">{stat.subtitle}</span>
@@ -28,6 +29,14 @@ const HomeTownHero = () => {
         </div>
       </div>
       <DownArrow />
+      <PostItNote
+        red
+        noteCopy="inspect that (pure css)"
+        left="80px"
+        bottom="-20px"
+        rotate="-20deg"
+        rotateArrow="30deg"
+      />
     </div>
   );
 };

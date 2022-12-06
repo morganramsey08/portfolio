@@ -1,0 +1,20 @@
+@import "../../styles/mixins.scss";
+
+.post-it-note {
+  font-family: "Reenie Beanie", serif;
+  font-size: 2.7rem;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.red {
+    color: $red;
+  }
+
+  img {
+    display: flex;
+  }
+}
