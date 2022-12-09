@@ -3,7 +3,7 @@ import PostItNote from "../note/index.tsx";
 import { Portfolio } from "./data.js";
 import "./index.scss";
 
-const PortfolioWork = () => {
+const PortfolioWork = (ifitImage) => {
   return (
     <div className="portfolio-component" id="work">
       <div className="header">
@@ -49,11 +49,13 @@ const PortfolioWork = () => {
                     );
                   })}
                 </div>
-                <a href={item.Behance} className="behance-link">
+                {/* <a href={item.Behance} className="behance-link">
                   View on Behance
-                </a>
+                </a> */}
               </div>
-              <div className="port-image"></div>
+              <div className="port-image">
+                <img src={item.img} alt={item.alt} />
+              </div>
             </div>
           );
         })}

@@ -1,5 +1,6 @@
 import React from "react";
 import DownArrow from "../down-arrow/index.tsx";
+import toolsUsed from "../../img/tools-used.png";
 import "./index.scss";
 
 const stats = [
@@ -17,6 +18,10 @@ const HomeTownHero = () => {
         <div className="intro">
           <h1>Morgan Ramsey</h1>
           <span className="sub">FrontEnd Devloper & Designer</span>
+          <img
+            src={toolsUsed}
+            alt="tools used: html, css, react, typescript, figma"
+          />
         </div>
         <div className="stats">
           {stats.map((stat) => (

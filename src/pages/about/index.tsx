@@ -16,7 +16,7 @@ function AboutPage() {
           alignItems="flex-start"
           noteCopy="this is where I live!"
           left="52%"
-          bottom="74%"
+          bottom="68%"
           rotate="-14deg"
           rotateArrow="-30deg"
           whiteArrow

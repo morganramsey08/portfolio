@@ -7,7 +7,7 @@
 
   @include for-phone-only {
     margin-top: 0;
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 
   @include for-tablet-portrait-up {
@@ -97,6 +97,9 @@
         padding-right: 20px;
 
         @include for-phone-only {
+          font-weight: 500;
+          font-size: 1rem;
+          margin: 20px 0;
           padding-right: 0;
         }
       }
@@ -132,7 +135,7 @@
           @include for-phone-only {
             line-height: 1.2;
             margin-bottom: 10px;
-            padding: 5px 5px;
+            padding: 5px 8px;
             text-align: center;
           }
 
@@ -147,11 +150,25 @@
       }
 
       .port-image {
-        background-color: $grey;
-        margin-left: auto;
         height: 350px;
         max-width: 550px;
         width: 100%;
+
+        @include for-phone-only {
+          margin: 0px 0 50px auto;
+        }
+
+        @include for-tablet-portrait-up {
+          margin: 0px 0 50px auto;
+        }
+
+        @include for-tablet-portrait-up {
+          margin: -50px 0 100px auto;
+        }
+
+        img {
+          max-width: 100%;
+        }
       }
 
       a {

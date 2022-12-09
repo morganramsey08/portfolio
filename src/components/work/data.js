@@ -1,3 +1,7 @@
+import ifitImage from "../../img/portfolio/ifit-onboarding.jpg";
+import flywheelImage from "../../img/portfolio/flywheel-app.jpg";
+import wegolookImage from "../../img/portfolio/wegolook-website.jpg";
+
 export const Portfolio = [
   {
     id: "1",
@@ -6,7 +10,8 @@ export const Portfolio = [
       "A subscription based fitness company that also sells hardware.  This is the onboarding flow for user acquisition.",
     Tags: ["FrontEnd Development", "UI Design"],
     Behance: "https://behance.com",
-    img: "./img/portfolio-1.jpg",
+    img: ifitImage,
+    alt: "Onboarding flow for iFit",
   },
   {
     id: "2",
@@ -15,7 +20,7 @@ export const Portfolio = [
       "Oil & Gas company with a focus on responsible delivery of sustainable returns through operational excellence",
     Tags: ["FrontEnd Development", "UI Design", "UX Research"],
     Behance: "https://behance.com",
-    img: "./img/portfolio-1.jpg",
+    img: flywheelImage,
   },
   {
     id: "3",
@@ -29,6 +34,6 @@ export const Portfolio = [
       "Project Management",
     ],
     Behance: "https://behance.com",
-    img: "./img/portfolio-1.jpg",
+    img: wegolookImage,
   },
 ];

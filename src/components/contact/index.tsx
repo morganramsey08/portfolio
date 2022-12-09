@@ -25,8 +25,20 @@ const ContactComponent = () => {
           </div>
           <div className="social">
             <span>/ Social</span>
-            <a href="linkedin">LinkedIn</a>
-            <a href="lbeha">BeHance</a>
+            <a
+              href="https://www.linkedin.com/in/morgan-ramsey-405175257/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://www.behance.net/morganramsey"
+              target="_blank"
+              rel="noreferrer"
+            >
+              BeHance
+            </a>
           </div>
         </div>
       </div>

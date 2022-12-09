@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../logo.svg";
 import github from "../../img/github.svg";
 import "./index.scss";
@@ -44,9 +45,9 @@ const NavBar = () => {
           </a>
         </span>
         <nav>
-          <Link className="nav-link" to="/">
+          <HashLink className="nav-link" to="/#work">
             work
-          </Link>
+          </HashLink>
           <Link className="nav-link" to="/about">
             about
           </Link>
