@@ -1,0 +1,98 @@
+@import "../../styles/mixins.scss";
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 75px auto;
+  max-width: 1600px;
+  padding: 0 40px;
+  position: relative;
+
+  @include for-phone-only {
+    max-width: 100%;
+  }
+
+  .bg-image {
+    background-color: $lime-26;
+    border-bottom-right-radius: 250px;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    top: -75px;
+    width: 75%;
+    z-index: -1;
+
+    @include for-phone-only {
+      display: none;
+    }
+  }
+
+  .bio-section {
+    color: $copy-80;
+    display: inline-flex;
+    margin: 0 auto;
+
+    @include for-phone-only {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      margin-right: 65px;
+      max-width: 400px;
+
+      @include for-phone-only {
+        margin-right: 0;
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        top: -75px;
+      }
+    }
+
+    .biography {
+      @include for-phone-only {
+        margin-top: 570px;
+      }
+
+      p {
+        font-family: "proxima_nova_semiabold", Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0 auto 20px auto;
+        max-width: 600px;
+
+        &.enlarged {
+          font-family: "proxima_nova_bold";
+          font-size: 2.5rem;
+          line-height: 1.4;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .goal {
+    font-size: 1.2rem;
+    font-family: "proxima_nova_semiabold", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 200px auto 100px;
+    width: 870px;
+
+    @include for-phone-only {
+      margin: 50px auto 100px;
+      width: 100%;
+    }
+
+    h3 {
+      color: $brand-blue;
+      font-family: "proxima_nova_bold";
+
+      @include for-phone-only {
+        font-family: "proxima_nova_bold_italic";
+        font-size: 2rem;
+      }
+    }
+  }
+}

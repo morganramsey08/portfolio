@@ -5,11 +5,22 @@
   font-size: 2.7rem;
   color: white;
   position: absolute;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+
+  @include for-desktop-up {
+    display: flex;
+  }
 
   &.red {
     color: $red;

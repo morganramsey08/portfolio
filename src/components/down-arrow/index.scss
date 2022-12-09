@@ -5,6 +5,17 @@ $anim-timing: 4s;
 
 .down-arrow-component {
   position: relative;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+  @include for-tablet-landscape-up {
+    display: block;
+  }
 }
 
 .arrow {
@@ -16,8 +27,6 @@ $anim-timing: 4s;
   z-index: 2;
 
   &::before {
-    //animation: colorChange $anim-timing $bezier forwards infinite;
-
     position: absolute;
     left: 111px;
     margin-left: -1px;
@@ -30,8 +39,6 @@ $anim-timing: 4s;
   }
 
   &::after {
-    //animation: colorChange $anim-timing $bezier forwards infinite;
-
     content: "";
     display: block;
     margin: 0;

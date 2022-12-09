@@ -1,46 +1,39 @@
-import React, { useState, useEffect } from "react";
-import NavBar from "./components/nav/index.tsx";
-import HomeTownHero from "./components/hometown-hero/index.tsx";
-import CurvedBox from "./components/curved-box/index.tsx";
-import PortfolioWork from "./components/work/index.tsx";
-import ContactComponent from "./components/contact/index.tsx";
+import React, { useLayoutEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import HomePage from "./pages/home/index.tsx";
+import AboutPage from "./pages/about/index.tsx";
+import ResumePage from "./pages/resume/index.tsx";
+import ContactPage from "./pages/contact/index.tsx";
+import FourOhFourPage from "./pages/404/index.tsx";
 
 import "./App.scss";
 
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
+
 function App() {
-  const [yOffset, setYOffset] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
-  const [insideThePage, setInsideThePage] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
-  function handleScroll() {
-    const currentYOffset = window.pageYOffset;
-    const visible = yOffset > currentYOffset;
-    console.log(currentYOffset);
-
-    if (currentYOffset > 30) {
-      setInsideThePage(true);
-    }
-
-    if (currentYOffset < 30) {
-      setInsideThePage(false);
-    }
-
-    setYOffset(currentYOffset);
-    setVisible(visible);
-  }
   return (
-    <div className="App">
-      <NavBar visible={visible} insideThePage={insideThePage} />
-      <HomeTownHero />
-      <CurvedBox />
-      <PortfolioWork />
-      <ContactComponent />
-    </div>
+    <Router>
+      <Wrapper>
+        <Routes>
+          <Route key="homepage" exact element={<HomePage />} path={"/"} />
+          <Route key="about" element={<AboutPage />} exact path="/about" />
+          <Route key="about" element={<ResumePage />} exact path="/resume" />
+          <Route key="about" element={<ContactPage />} exact path="/contact" />
+          <Route path="*" element={<FourOhFourPage />} />
+        </Routes>
+      </Wrapper>
+    </Router>
   );
 }
 

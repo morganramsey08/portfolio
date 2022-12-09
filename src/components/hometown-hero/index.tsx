@@ -11,7 +11,7 @@ const stats = [
 
 const HomeTownHero = () => {
   return (
-    <div className="hero-wrapper">
+    <div className="hometown-hero-wrapper">
       <div className="bg-image" />
       <div className="content">
         <div className="intro">

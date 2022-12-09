@@ -1,0 +1,13 @@
+@import "../../styles/mixins.scss";
+
+.hero-component {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+
+  @include for-phone-only {
+    display: none;
+  }
+}

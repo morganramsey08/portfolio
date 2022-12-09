@@ -1,0 +1,147 @@
+@import "../../styles/mixins.scss";
+
+.resume-wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 20px;
+
+  @include for-tablet-portrait-up {
+    margin-top: -150px;
+  }
+
+  @include for-tablet-landscape-up {
+    margin: 0 auto;
+  }
+
+  .resume-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    button {
+      background: transparent;
+      color: $brand-blue;
+      cursor: pointer;
+      font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+      font-size: 1.4rem;
+      margin-right: 20;
+      padding-bottom: 20px;
+
+      @include for-phone-only {
+        font-size: 1rem;
+        padding-bottom: 10px;
+      }
+    }
+
+    .bottom-border {
+      background: $brand-blue;
+      border-radius: 4px;
+      display: block;
+      height: 5px;
+      position: absolute;
+      top: 40px;
+      transition-duration: 500ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include for-phone-only {
+        top: 30px;
+      }
+    }
+  }
+
+  .resume-content {
+    margin-top: 100px;
+
+    @include for-phone-only {
+      margin-top: 50px;
+    }
+
+    span {
+      display: block;
+    }
+
+    .job,
+    .name,
+    .college {
+      font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 3px;
+    }
+
+    .date,
+    .company {
+      font-size: 0.875rem;
+      font-weight: 800;
+      color: $copy-60;
+      margin-bottom: 15px;
+    }
+
+    .title,
+    .degree,
+    .reference-job {
+      font-family: "proxima_nova_semibold", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 5px;
+    }
+
+    .relationship,
+    .summary {
+      line-height: 1.5;
+      max-width: 60%;
+
+      @include for-phone-only {
+        max-width: 100%;
+      }
+    }
+
+    .job-section {
+      margin-bottom: 80px;
+
+      ul {
+        margin-top: 10px;
+        padding-left: 20px;
+
+        li {
+          list-style-type: disc;
+          margin-bottom: 10px;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .college-section {
+      margin-bottom: 80px;
+
+      .summary {
+        max-width: 50%;
+
+        @include for-phone-only {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .reference-section {
+      margin-bottom: 80px;
+
+      .company {
+        margin: 5px 0 3px;
+      }
+
+      .phone {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        margin: 13px 0 8px;
+      }
+
+      .email {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

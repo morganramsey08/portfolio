@@ -57,8 +57,8 @@ const PostItNote = ({
         <path
           d="M1.268 20.468c17.762.718 52.246 11.637 48.085 49.57M1.268 20.467L24 1.5M1.268 20.468l9.32 29.445"
           stroke="red"
-          stroke-opacity=".47"
-          stroke-width="2"
+          strokeOpacity=".47"
+          strokeWidth="2"
         />
       </svg>
       {noteCopy}

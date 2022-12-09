@@ -5,7 +5,7 @@ import "./index.scss";
 
 const PortfolioWork = () => {
   return (
-    <div className="portfolio-component">
+    <div className="portfolio-component" id="work">
       <div className="header">
         <div className="header-wrap">
           <h2>Work</h2>
