@@ -49,9 +49,14 @@ const PortfolioWork = (ifitImage) => {
                     );
                   })}
                 </div>
-                {/* <a href={item.Behance} className="behance-link">
+                <a
+                  href={item.Behance}
+                  className="behance-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View on Behance
-                </a> */}
+                </a>
               </div>
               <div className="port-image">
                 <img src={item.img} alt={item.alt} />
