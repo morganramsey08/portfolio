@@ -67,9 +67,6 @@ const NavBar = () => {
           >
             <img src={github} alt="Morgan Ramsey Portfolio" />
           </a>
-          <a className="button primary hire-me" href="/contact">
-            hire me
-          </a>
         </div>
       </div>
     </div>

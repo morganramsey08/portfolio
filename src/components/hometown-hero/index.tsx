@@ -17,7 +17,7 @@ const HomeTownHero = () => {
       <div className="content">
         <div className="intro">
           <h1>Morgan Ramsey</h1>
-          <span className="sub">FrontEnd Devloper & Designer</span>
+          <span className="sub">FrontEnd Developer & Designer</span>
           <img
             src={toolsUsed}
             alt="tools used: html, css, react, typescript, figma"
