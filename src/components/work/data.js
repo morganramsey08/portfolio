@@ -7,7 +7,7 @@ export const Portfolio = [
     id: "1",
     Name: "iFit",
     Description:
-      "A subscription based fitness company that also sells hardware.  This is the onboarding flow for user acquisition.",
+      "A subscription based fitness company that also sells hardware.  This is the onboarding flow for user acquisition. 🏋",
     Tags: ["FrontEnd Development", "UI Design"],
     Behance: "https://www.behance.net/gallery/158929219/iFit-Onboarding-Flow",
     img: ifitImage,
@@ -17,7 +17,7 @@ export const Portfolio = [
     id: "2",
     Name: "Flywheel",
     Description:
-      "Oil & Gas company with a focus on responsible delivery of sustainable returns through operational excellence",
+      "Oil & Gas company with a focus on responsible delivery of sustainable returns through operational excellence. 🚀",
     Tags: ["FrontEnd Development", "UI Design", "UX Research"],
     Behance: "https://www.behance.net/gallery/158931125/Flywheel-Energy",
     img: flywheelImage,
@@ -26,7 +26,7 @@ export const Portfolio = [
     id: "3",
     Name: "WeGoLook",
     Description:
-      "WeGoLook helps businesses and individuals gather and validate information anytime, anywhere by sending an inspector for you.",
+      "WeGoLook helps businesses and individuals gather and validate information anytime, anywhere by sending an inspector for you. 🔍",
     Tags: [
       "FrontEnd Development",
       "UI Design",
