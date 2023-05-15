@@ -1,4 +1,5 @@
 import React from "react";
+import Balancer from "react-wrap-balancer";
 import FullProfilePic from "../../img/morgan-ramsey-full-profile.jpg";
 import "./index.scss";
 
@@ -12,33 +13,37 @@ const BioComponent = () => {
         </div>
         <div className="biography">
           <p className="enlarged">
-            I started doing this when the only job titles were computer
-            programmer and website designer.
+            <Balancer>
+              As a skilled Front End Web Developer, I have been honing my craft
+              for several years with a passion for creating intuitive and
+              engaging user experiences.
+            </Balancer>
           </p>
           <p>
-            I have had a focus on FrontEnd Engineering for the past five years,
-            but I have had a foot in the design world for over fifteen years.
-            I’ve honed in my skills with companies like iFit, Sony BMG, and
-            Flywheel Energy to name a few. I am passionate about turning complex
-            problems into easy user flows and get a real sense of accomplishment
-            with wrapping up clean projects in both design and code base.
+            <Balancer>
+              With over 15 years of experience in design and development, I've
+              honed my skills with top companies such as iFit, Sony BMG, and
+              Flywheel Energy. My focus on FrontEnd Engineering over the past 5
+              years has allowed me to excel at turning complex problems into
+              easy user flows. I'm passionate about delivering clean projects
+              that seamlessly blend design and code.
+            </Balancer>
           </p>
           <p>
-            There is nothing worse than trying to write about yourself so I’ll
-            keep it short and sweet. I am a huge fan of anything outdoors e.g.
-            camping, hiking, hunting. I have been playing music since I was a
-            kid and I love anything that will help me unwind and take my eyes
-            off the screen.
+            <Balancer>
+              Beyond work, I enjoy outdoor activities like camping, hiking, and
+              hunting, as well as playing music to unwind.
+            </Balancer>
           </p>
         </div>
       </div>
       <div className="goal">
         <h3>My Goal</h3>
         <p>
-          I want to deliver the cleanest designs and code to your customer,
-          client, or colleagues. Directing a user’s behavior with the least
-          amount of confusion or resistance is the most important part of my
-          job. Let me help your business out by guiding your users with ease.
+          to deliver the cleanest designs and code to your clients, customers,
+          or colleagues. I prioritize directing user behavior with minimal
+          confusion or resistance. Let me help guide your users with ease and
+          improve your business.
         </p>
       </div>
     </div>

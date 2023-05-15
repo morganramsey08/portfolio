@@ -7,7 +7,13 @@ const CurvedBox = () => {
     <div className="curved-box-component">
       <div className="content-container">
         <img src={ProfilePic} alt="Morgan Ramsey" />
-        <p>I get a real kick out of <span className="bold-blue">simplifying</span> complex tasks and making users feel comfortable with an interface through both <span className="bold-italic">code</span> and <span className="bold-italic">design</span>.</p>
+        <p>
+          I want to work on something cool! I get a real kick out of{" "}
+          <span className="bold-blue">simplifying</span> complex tasks and
+          making users feel comfortable with an interface through both{" "}
+          <span className="bold-italic">code</span> and{" "}
+          <span className="bold-italic">design</span>.
+        </p>
       </div>
     </div>
   );

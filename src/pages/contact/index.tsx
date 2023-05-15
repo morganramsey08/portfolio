@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../../components/nav/index.tsx";
-import ContactComponent from "../../components/contact/index.tsx";
+import NavBar from "../../components/nav/index";
+import ContactComponent from "../../components/contact/index";
 import "./index.scss";
 
 function ContactPage() {

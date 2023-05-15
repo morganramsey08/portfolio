@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "../../components/nav/index.tsx";
-import PostItNote from "../../components/note/index.tsx";
-import ContactComponent from "../../components/contact/index.tsx";
-import Hero from "../../components/hero/index.tsx";
-import BioComponent from "../../components/bio/index.tsx";
+import NavBar from "../../components/nav/index";
+import PostItNote from "../../components/note/index";
+import ContactComponent from "../../components/contact/index";
+import Hero from "../../components/hero/index";
+import BioComponent from "../../components/bio/index";
 import HeroBg from "../../img/hero-bg-about.jpg";
 import "./index.scss";
 

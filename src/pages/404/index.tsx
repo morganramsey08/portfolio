@@ -1,7 +1,5 @@
 import React from "react";
-import NavBar from "../../components/nav/index.tsx";
-import HomeTownHero from "../../components/hometown-hero/index.tsx";
-import ContactComponent from "../../components/contact/index.tsx";
+import NavBar from "../../components/nav/index";
 
 function FourOhFourPage() {
   return (

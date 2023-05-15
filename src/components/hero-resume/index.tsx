@@ -1,6 +1,6 @@
 import React from "react";
 import astronaut from "../../img/resume-astronaut.svg";
-import PostItNote from "../note/index.tsx";
+import PostItNote from "../note/index";
 import "./index.scss";
 
 const ResumeHero = () => {

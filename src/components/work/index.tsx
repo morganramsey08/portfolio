@@ -1,16 +1,16 @@
 import React from "react";
-import PostItNote from "../note/index.tsx";
+import PostItNote from "../note/index";
 import { Portfolio } from "./data.js";
 import "./index.scss";
 
-const PortfolioWork = (ifitImage) => {
+const PortfolioWork = () => {
   return (
     <div className="portfolio-component" id="work">
       <div className="header">
         <div className="header-wrap">
           <h2>Work</h2>
           <span className="subtitle">
-            focusing on usability and intuitiveness
+            Refining usability and intuitiveness.
           </span>
         </div>
         <div className="code-cta">

@@ -4,45 +4,81 @@ export const resumeData = [
     Name: "work history",
     data: [
       {
+        job: "FinTron",
+        jobDates: "December 2022 - Present  |  Remote",
+        jobTitle:
+          "Senior Front End Developer / UI Designer / Project Management",
+        jobTask: (
+          <ul>
+            <li>
+              Designed and developed new components for an SDK to facilitate the
+              licensing of key features of our flagship app, resulting in
+              increased revenue and expanded customer reach.
+            </li>
+            <li>
+              Led the migration of the API to gRPC and GraphQL, resulting in
+              improved performance, reliability, and flexibility.
+            </li>
+            <li>
+              Collaborated closely with the design team to create intuitive and
+              visually appealing screens for stock and crypto trades, enhancing
+              the user experience and driving engagement.
+            </li>
+            <li>
+              Managed multiple cross-functional teams in developing and
+              delivering projects on time and within budget, utilizing Agile
+              methodologies and project management tools.
+            </li>
+            <li>
+              Built a new dashboard for user automated investments, enabling
+              customers to easily manage and monitor their portfolios and
+              investments.
+            </li>
+          </ul>
+        ),
+      },
+      {
         job: "Ramsey Development",
         jobDates: "January 2019 - Present | Remote",
         jobTitle: "Owner / FrontEnd Developer / UI Designer",
         jobTask: (
           <ul>
             <li>
-              Running and developing a full service graphic/web design business
-              since 2019
+              Established and managed a successful full-service graphic and web
+              design business since 2019, providing clients with a range of
+              services from logo design to web app development.
             </li>
             <li>
-              Helping clients with everything from simple logo needs to web app
-              design and development.
+              Emphasized a clean UX design approach and prioritized user flow
+              and intuition.
             </li>
             <li>
-              Strong focus on clean UX design and showing our clients the
-              importance of user flow and intuition
+              Cultivated strong client relationships by providing exceptional
+              customer service and maintaining open communication channels to
+              ensure their needs are met.
             </li>
           </ul>
         ),
       },
       {
         job: "iFit",
-        jobDates: "September 2017 - Present | Remote",
+        jobDates: "September 2017 - November 2022 | Remote",
         jobTitle: "Front End Developer",
         jobTask: (
           <ul>
             <li>
-              Served as a senior member of iFit's Front End Development and
+              Worked as a senior member of iFit's Front End Development and
               Design Team.
             </li>
             <li>
-              Primary responsibilities and accountabilities focused on iFit's
-              customer facing website and post-login dashboard, including all
-              aspects of the design, development and maintenance of user
-              acquisition and payment processing pages and forms.
+              Focused on iFit's customer-facing website and post-login
+              dashboard, handling all aspects of design, development, as well as
+              maintenance of user acquisition and payment processing pages and
+              forms.
             </li>
             <li>
-              A strong and important focus on ADA compliance was implemented on
-              all projects I worked on with this company.
+              Implemented a strong and important focus on ADA compliance on all
+              projects I worked on with this company.
             </li>
           </ul>
         ),
@@ -54,17 +90,18 @@ export const resumeData = [
         jobTask: (
           <ul>
             <li>
-              I was in charge of a complete full scale website redesign and
-              development as well as the complete redesign of the company's new
-              app that is being used by more than 40K users currently.
+              Led a complete full-scale website redesign and development, as
+              well as the complete redesign of the company's new app, which
+              currently serves over 40K users.
             </li>
             <li>
-              The day to day operations ranged from designing new reports for
-              the customer, art direction on any new designs from the team.
+              Managed day-to-day operations, including designing new reports for
+              customers, providing art direction for new designs from the team.
             </li>
             <li>
-              Implemented a new A/B landing page test setup as well as tending
-              to the company's SEO needs.
+              Implemented a new A/B landing page test setup and tended to the
+              company's SEO needs to improve website traffic and user
+              engagement.
             </li>
           </ul>
         ),
@@ -103,7 +140,7 @@ export const resumeData = [
         degree: "Associates in Multimedia Design",
         whenWhere: "October 2003 - May 2006 |  Dallas, Texas",
         summary:
-          "My courses included everything from basic graphic design to graphic animation. I had a main focus on web design and development.",
+          "I completed coursework in a range of graphic design and animation topics with a primary focus on web design and development. Through this program, I acquired skills in areas such as user interface design, HTML/CSS coding, responsive design, and content management systems. Additionally, I had the opportunity to participate in hands-on projects that involved creating and launching websites, designing and prototyping user interfaces, and developing multimedia content. These experiences allowed me to hone my skills and apply them in practical ways.",
       },
     ],
   },
@@ -118,7 +155,7 @@ export const resumeData = [
         phone: "405.742.2696",
         email: "Zack.Laird@flywheelenergy.com",
         relationship:
-          "I worked with Zack as a contractor for Flywheel Energy, LLC. Zack was the product engineer for the app development team I worked with.  During my time working there I worked with Zack on app wireframes, design, and full development.",
+          "As a contractor for Flywheel Energy, LLC, I collaborated with Zack, who served as the product engineer for the app development team. Together, we worked on various aspects of the app development process, including wireframing, design, and full development.",
       },
       {
         name: "Joe Hischer",
@@ -127,7 +164,7 @@ export const resumeData = [
         phone: "435-938-8580",
         email: "joehischer@gmail.com",
         relationship:
-          "I have worked with Joe closely over the past five years at iFit. Joe was a product engineer for our team from 2019 to 2022.  During my time working with Joe we completely rebuilt the iFit marketing website, migrated client onboarding apps into new technology, and worked on optimizing all of iFit’s products to be ADA/WCAG compliant.",
+          "During my five years at iFit, I worked closely with Joe, who served as a product engineer for our team from 2019 to 2022. Together, we successfully rebuilt the iFit marketing website, migrated client onboarding apps to new technology, and optimized all iFit products to meet ADA/WCAG compliance standards.",
       },
       {
         name: "Jason Thornhill",
@@ -136,7 +173,7 @@ export const resumeData = [
         phone: "405.882.8282",
         email: "jasonethornhill@gmail.com",
         relationship:
-          "I worked with Jason for many years at Farmers insurance working on their development team together.  Since then we have worked on many freelance projects together with him handling the back end and me designing/developing the front end.",
+          "I collaborated with Jason for several years on Farmers Insurance's development team. Since then, we have partnered on various freelance projects, with Jason managing the back-end development and myself handling front-end design and development.",
       },
     ],
   },

@@ -1,12 +1,12 @@
 import React from "react";
-import DownArrow from "../down-arrow/index.tsx";
+import DownArrow from "../down-arrow/index";
 import toolsUsed from "../../img/tools-used.png";
 import "./index.scss";
 
 const stats = [
   { number: 17, subtitle: "years experience" },
   { number: "100+", subtitle: "sites" },
-  { number: "100+", subtitle: "components" },
+  { number: "1,000+", subtitle: "components" },
   { number: "1,000,000+", subtitle: "cups of coffee" },
 ];
 

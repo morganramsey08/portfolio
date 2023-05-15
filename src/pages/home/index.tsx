@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "../../components/nav/index.tsx";
-import HomeTownHero from "../../components/hometown-hero/index.tsx";
-import CurvedBox from "../../components/curved-box/index.tsx";
-import PortfolioWork from "../../components/work/index.tsx";
-import ContactComponent from "../../components/contact/index.tsx";
+import NavBar from "../../components/nav/index";
+import HomeTownHero from "../../components/hometown-hero/index";
+import CurvedBox from "../../components/curved-box/index";
+import PortfolioWork from "../../components/work/index";
+import ContactComponent from "../../components/contact/index";
 import "./index.scss";
 
 function HomePage() {
