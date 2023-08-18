@@ -1,54 +1,23 @@
-@font-face {
-  font-family: "proxima_nova_regular";
-  src: url("../assets/fonts/proximanova-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima_nova_thin";
-  src: url("../assets/fonts/Proxima-Nova-Thin.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima_nova_bold";
-  src: url("../assets/fonts/proximanova-bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima_nova_semibold";
-  src: url("../assets/fonts/proximanova-semibold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima_nova_extrabold";
-  src: url("../assets/fonts/proximanova-extrabold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima_nova_bold_italic";
-  src: url("../assets/fonts/ProximaNova-900-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie");
 
 body,
 a,
 button,
-p {
-  font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+div {
+  font-family: "Inter", sans-serif;
+
+  &::selection {
+    background: $brand-blue;
+    color: white;
+  }
 }
 h1 {
-  font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Sanchez");
-@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie");

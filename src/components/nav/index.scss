@@ -16,8 +16,9 @@
   }
 
   &.solid-bg {
-    background-color: white;
-    border-bottom: 1px solid $grey-62;
+    border-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
   }
 
   .nav-container {
@@ -27,22 +28,23 @@
     margin: 0 auto;
 
     @include for-phone-only {
-      grid-template-columns: 10% 70% 20%;
+      grid-template-columns: 20% 80%;
       padding: 15px 20px;
+      justify-content: space-between;
     }
 
     @include for-xs-phone-only {
-      grid-template-columns: 15% 85% 0;
+      grid-template-columns: 20% 80%;
       padding: 15px 20px;
       width: 100%;
     }
 
     @include for-tablet-portrait-up {
-      grid-template-columns: 7% 68% 25%;
+      grid-template-columns: 3% 75% 20%;
     }
 
     @include for-tablet-landscape-up {
-      grid-template-columns: 10% 70% 20%;
+      grid-template-columns: 33% 33% 33%;
     }
 
     @include for-desktop-up {
@@ -64,6 +66,11 @@
       align-self: center;
       display: inline-flex;
       margin: 0 auto;
+
+      @include for-phone-only {
+        justify-self: end;
+        margin: 0;
+      }
 
       a {
         color: $copy;
@@ -93,54 +100,41 @@
       }
     }
 
-    .links {
-      align-items: center;
+    .hire-me {
+      color: $copy;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04rem;
       display: inline-flex;
-      justify-content: flex-end;
-      margin-left: 10px;
+      justify-self: end;
+      align-items: center;
 
-      .github {
-        margin-right: 20px;
-        transition: all 0.2s ease-in;
-
-        @include for-phone-only {
-          display: none;
-        }
-
-        @include for-tablet-portrait-up {
-          margin-right: 15px;
-        }
-
-        img {
-          width: 30px;
-        }
+      &::before {
+        content: "";
+        height: 10px;
+        border-radius: 100px;
+        background-color: $lime;
+        display: block;
+        left: -10px;
+        position: relative;
+        width: 10px;
       }
 
-      .hire-me {
-        background: $brand-blue;
-        border-radius: 8px;
-        color: white;
-        font-size: 0.875rem;
-        font-weight: 700;
+      @include for-xs-phone-only {
+        display: none;
+      }
 
-        @include for-xs-phone-only {
-          display: none;
-        }
+      @include for-phone-only {
+        display: none;
+      }
 
-        @include for-phone-only {
-          padding: 10px 13px;
-          width: auto;
-        }
+      @include for-tablet-portrait-up {
+        padding: 10px 13px;
+        width: auto;
+      }
 
-        @include for-tablet-portrait-up {
-          padding: 10px 13px;
-          width: auto;
-        }
-
-        @include for-tablet-landscape-up {
-          padding: 13px 20px;
-          width: 90px;
-        }
+      @include for-tablet-landscape-up {
+        padding: 13px 20px;
       }
     }
   }

@@ -41,57 +41,46 @@
     img {
       margin-right: 65px;
       max-width: 400px;
+      border-radius: 8px;
 
       @include for-phone-only {
         margin-right: 0;
-        max-width: 100%;
+        max-width: 300px;
         position: absolute;
-        left: 0;
+        left: calc(50% - 150px);
         top: -75px;
+        border-radius: 0;
       }
     }
 
     .biography {
       @include for-phone-only {
-        margin-top: 570px;
+        margin-top: 385px;
       }
 
       p {
-        font-family: "proxima_nova_semiabold", Helvetica, Arial, sans-serif;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
         font-size: 1.2rem;
         line-height: 1.5;
         margin: 0 auto 20px auto;
         max-width: 600px;
 
+        @include for-phone-only {
+          font-size: 1rem;
+        }
+
         &.enlarged {
-          font-family: "proxima_nova_bold";
-          font-size: 2.5rem;
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
+          font-size: 2rem;
           line-height: 1.4;
           margin-bottom: 30px;
+
+          @include for-phone-only {
+            font-size: 1.5rem;
+          }
         }
-      }
-    }
-  }
-
-  .goal {
-    font-size: 1.5rem;
-    font-family: "proxima_nova_semiabold", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    margin: 250px auto 100px;
-    width: 870px;
-
-    @include for-phone-only {
-      margin: 50px auto 100px;
-      width: 100%;
-    }
-
-    h3 {
-      color: $brand-blue;
-      font-family: "proxima_nova_bold";
-
-      @include for-phone-only {
-        font-family: "proxima_nova_bold_italic";
-        font-size: 2rem;
       }
     }
   }

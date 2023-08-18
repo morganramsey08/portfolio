@@ -81,8 +81,9 @@
       }
 
       &.sub {
+        font-family: "Inter", sans-serif;
         font-size: 5rem;
-        font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+        font-weight: 800;
         margin-bottom: 20px;
 
         @include for-phone-only {
@@ -109,11 +110,11 @@
   }
 
   .astronaut {
+    font-family: "Inter", sans-serif;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 10px 90px 0 auto;
     position: relative;
-    font-family: "proxima_nova_semiabold", Helvetica, Arial, sans-serif;
 
     @include for-phone-only {
       display: none;

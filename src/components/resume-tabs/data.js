@@ -67,18 +67,18 @@ export const resumeData = [
         jobTask: (
           <ul>
             <li>
-              Worked as a senior member of iFit's Front End Development and
-              Design Team.
+              Contributed as a senior member of iFit's Front End Development
+              Team, adeptly crafting reusable functional components utilizing
+              React TypeScript.
             </li>
             <li>
-              Focused on iFit's customer-facing website and post-login
-              dashboard, handling all aspects of design, development, as well as
-              maintenance of user acquisition and payment processing pages and
-              forms.
+              Oversaw the design, development, and upkeep of the customer facing
+              website, user onboarding flow, membership renewal flow, and
+              post-login dashboard.
             </li>
             <li>
-              Implemented a strong and important focus on ADA compliance on all
-              projects I worked on with this company.
+              Prioritized ADA compliance and user-centric design throughout all
+              projects.
             </li>
           </ul>
         ),
@@ -95,8 +95,8 @@ export const resumeData = [
               currently serves over 40K users.
             </li>
             <li>
-              Managed day-to-day operations, including designing new reports for
-              customers, providing art direction for new designs from the team.
+              Managed day-to-day operations, offering clear product direction
+              for the mobile app's development.
             </li>
             <li>
               Implemented a new A/B landing page test setup and tended to the
@@ -113,18 +113,16 @@ export const resumeData = [
         jobTask: (
           <ul>
             <li>
-              Responsibilities for my work at Narrate were primarily project
-              management from start to finish, handling all communications and
-              art direction from clients, and designing and developing online
-              platforms for the clients.
+              Worked alongside designers, developers, and clients to align
+              design strategies with marketing goals.
             </li>
             <li>
-              Worked a lot at this company on content management systems like
-              wordpress, drupal, and shopify.
+              Created user-focused designs for effective marketing campaigns
+              that boosted brand awareness and conversions.
             </li>
             <li>
-              Filmed/Photographed hundreds of hours for a child company called
-              Fubelly that created visual menus for the restaruant industry.
+              Used data and user insights to refine designs, leading to
+              consistently successful campaigns.
             </li>
           </ul>
         ),

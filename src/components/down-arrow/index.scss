@@ -5,6 +5,7 @@ $anim-timing: 4s;
 
 .down-arrow-component {
   position: relative;
+  right: 0;
 
   @include for-phone-only {
     display: none;
@@ -21,7 +22,6 @@ $anim-timing: 4s;
 .arrow {
   animation: slideDown $anim-timing $bezier forwards infinite normal;
   position: relative;
-  left: auto;
   transform: translateZ(0);
   transform-origin: bottom;
   z-index: 2;

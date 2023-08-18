@@ -1,38 +1,49 @@
 import React from "react";
-import DownArrow from "../down-arrow/index";
-import toolsUsed from "../../img/tools-used.png";
+import github from "../../img/github.svg";
+import figma from "../../img/figma.svg";
+import downArrow from "../../img/arrow.svg";
 import "./index.scss";
-
-const stats = [
-  { number: 17, subtitle: "years experience" },
-  { number: "100+", subtitle: "sites" },
-  { number: "1,000+", subtitle: "components" },
-  { number: "1,000,000+", subtitle: "cups of coffee" },
-];
 
 const HomeTownHero = () => {
   return (
     <div className="hometown-hero-wrapper">
-      <div className="bg-image" />
+      {/* <div className="bg-image" /> */}
       <div className="content">
         <div className="intro">
-          <h1>Morgan Ramsey</h1>
-          <span className="sub">FrontEnd Developer & Designer</span>
-          <img
-            src={toolsUsed}
-            alt="tools used: html, css, react, typescript, figma"
-          />
-        </div>
-        <div className="stats">
-          {stats.map((stat) => (
-            <div className="stat">
-              <span className="number">{stat.number}</span>
-              <span className="title">{stat.subtitle}</span>
-            </div>
-          ))}
+          <h1>👋 I'm Morgan Ramsey</h1>
+          <span className="sub">Designer &amp; Developer</span>
+          <p>
+            With over 15 years of experience in UI/UX design and front-end
+            development, I've honed a strategy that creates designs for systems,
+            fostering remarkable habits.
+          </p>
+          <div className="hero-cta">
+            <a
+              href="https://www.figma.com/file/QrWS2IzbvhpbYfAqBIDOUd/portfolio?type=design&node-id=204%3A335&t=j0p3I0sqg3mSyXbw-1"
+              className="button primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={figma} alt="Morgan Ramsey Figma Portfolio" /> View this
+              site in Figma
+            </a>
+            <a
+              href="https://github.com/morganramsey08/portfolio"
+              className="button primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={github} alt="Morgan Ramsey Github Portfolio" /> View
+              this site on GitHub
+            </a>
+          </div>
         </div>
       </div>
-      <DownArrow />
+      <img
+        src={downArrow}
+        alt="arrow leading to portfolio"
+        className="down-arrow"
+      />
     </div>
   );
 };

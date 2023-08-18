@@ -14,19 +14,24 @@ const BioComponent = () => {
         <div className="biography">
           <p className="enlarged">
             <Balancer>
-              As a skilled Front End Web Developer, I have been honing my craft
-              for several years with a passion for creating intuitive and
-              engaging user experiences.
+              As a skilled Designer, I have been honing my craft for several
+              years with a passion for creating intuitive and engaging user
+              experiences.
             </Balancer>
           </p>
           <p>
             <Balancer>
               With over 15 years of experience in design and development, I've
               honed my skills with top companies such as iFit, Sony BMG, and
-              Flywheel Energy. My focus on FrontEnd Engineering over the past 5
-              years has allowed me to excel at turning complex problems into
-              easy user flows. I'm passionate about delivering clean projects
-              that seamlessly blend design and code.
+              Flywheel Energy.
+            </Balancer>
+          </p>
+          <p>
+            <Balancer>
+              My focus on FrontEnd Engineering over the past 5 years has allowed
+              me to excel at turning complex problems into easy user flows. I'm
+              passionate about delivering clean projects that seamlessly blend
+              design and code.
             </Balancer>
           </p>
           <p>
@@ -36,15 +41,6 @@ const BioComponent = () => {
             </Balancer>
           </p>
         </div>
-      </div>
-      <div className="goal">
-        <h3>My Goal</h3>
-        <p>
-          to deliver the cleanest designs and code to your clients, customers,
-          or colleagues. I prioritize directing user behavior with minimal
-          confusion or resistance. Let me help guide your users with ease and
-          improve your business.
-        </p>
       </div>
     </div>
   );

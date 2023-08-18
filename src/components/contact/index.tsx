@@ -6,7 +6,7 @@ const ContactComponent = () => {
   return (
     <div className="contact-component">
       <div className="contact-wrapper">
-        <h2>Want to Hire Me</h2>
+        <h2>Want to Hire Me?</h2>
         <span className="subtitle">Salary? Contract? Project?</span>
         <PostItNote
           alignItems="flex-start"

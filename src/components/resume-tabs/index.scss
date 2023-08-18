@@ -22,8 +22,9 @@
       background: transparent;
       color: $brand-blue;
       cursor: pointer;
-      font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 1.4rem;
+      font-weight: 800;
       margin-right: 20;
       padding-bottom: 20px;
 
@@ -64,8 +65,9 @@
     .job,
     .name,
     .college {
-      font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 1.6rem;
+      font-weight: 800;
       margin-bottom: 3px;
     }
 
@@ -80,8 +82,9 @@
     .title,
     .degree,
     .reference-job {
-      font-family: "proxima_nova_semibold", Helvetica, Arial, sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.875rem;
+      font-weight: 600;
       margin-bottom: 5px;
     }
 

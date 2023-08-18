@@ -8,9 +8,9 @@ const CurvedBox = () => {
       <div className="content-container">
         <img src={ProfilePic} alt="Morgan Ramsey" />
         <p>
-          I want to work on something cool! I get a real kick out of{" "}
+          Let's work together! I love{" "}
           <span className="bold-blue">simplifying</span> complex tasks and
-          making users feel comfortable with an interface through both{" "}
+          creating a user-friendly experience through{" "}
           <span className="bold-italic">code</span> and{" "}
           <span className="bold-italic">design</span>.
         </p>

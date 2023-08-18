@@ -12,7 +12,7 @@
     left: 20px;
     overflow-x: hidden;
     padding: 40px 20px 40px 30px;
-    top: -45px;
+    top: 100px;
     width: 100%;
   }
 
@@ -32,7 +32,7 @@
   @include for-desktop-up {
     border: 20px solid $brand-blue;
     border-radius: 262px 0px 0px 0px;
-    padding: 90px 0 60px 90px;
+    padding: 90px 0 70px 90px;
     right: -20%;
     top: 120px;
     width: 120%;
@@ -90,13 +90,15 @@
 
         &.bold-blue {
           color: $brand-blue;
-          font-family: "proxima_nova_extrabold", Helvetica, Arial, sans-serif;
+          font-family: "Inter", sans-serif;
           font-weight: 800;
         }
 
         &.bold-italic {
           font-style: italic;
-          font-family: "proxima_nova_bold_italic", Helvetica, Arial, sans-serif;
+          font-family: "Inter", sans-serif;
+          font-style: italic;
+          font-weight: 700;
         }
       }
     }

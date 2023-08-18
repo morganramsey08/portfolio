@@ -3,7 +3,6 @@ import classnames from "classnames";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../../logo.svg";
-import github from "../../img/github.svg";
 import "./index.scss";
 
 const NavBar = () => {
@@ -58,15 +57,8 @@ const NavBar = () => {
             contact
           </Link>
         </nav>
-        <div className="links">
-          <a
-            href="https://github.com/morganramsey08/portfolio"
-            className="github"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={github} alt="Morgan Ramsey Portfolio" />
-          </a>
+        <div className="hire-me">
+          <span className="green-dot"></span>Open to hire
         </div>
       </div>
     </div>

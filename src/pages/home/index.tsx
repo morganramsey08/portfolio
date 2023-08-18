@@ -11,8 +11,8 @@ function HomePage() {
     <div className="home-page">
       <NavBar />
       <HomeTownHero />
-      <CurvedBox />
       <PortfolioWork />
+      <CurvedBox />
       <ContactComponent />
     </div>
   );

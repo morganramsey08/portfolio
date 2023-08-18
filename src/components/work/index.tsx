@@ -1,69 +1,53 @@
 import React from "react";
-import PostItNote from "../note/index";
 import { Portfolio } from "./data.js";
 import "./index.scss";
 
 const PortfolioWork = () => {
   return (
     <div className="portfolio-component" id="work">
-      <div className="header">
-        <div className="header-wrap">
-          <h2>Work</h2>
-          <span className="subtitle">
-            Refining usability and intuitiveness.
-          </span>
+      <div className="wrapper">
+        <div className="header">
+          <div className="header-wrap">
+            <h2>Work</h2>
+            <span className="subtitle">
+              Refining usability and intuitiveness.
+            </span>
+            <hr className="title-bottom-border" />
+          </div>
         </div>
-        <div className="code-cta">
-          <PostItNote
-            alignItems="flex-end"
-            red
-            noteCopy="if you want to see the code"
-            left="54px"
-            bottom="122px"
-            rotate="16deg"
-            rotateArrow="30deg"
-            reverseArrow
-          />
-          <a
-            href="https://github.com/morganramsey08/portfolio"
-            className="button primary"
-          >
-            Check this site out on GitHub
-          </a>
-        </div>
-      </div>
 
-      <div className="portfolio-container">
-        {Portfolio.map((item) => {
-          return (
-            <div className="port-item" key={item.id}>
-              <div>
-                <span className="title">{item.Name}</span>
-                <span className="description">{item.Description}</span>
-                <div className="tags">
-                  {item.Tags.map((tag, index) => {
-                    return (
-                      <span className="tag" key={index}>
-                        {tag}
-                      </span>
-                    );
-                  })}
+        <div className="portfolio-container">
+          {Portfolio.map((item) => {
+            return (
+              <div className="port-item" key={item.id}>
+                <div>
+                  <span className="title">{item.Name}</span>
+                  <span className="description">{item.Description}</span>
+                  <div className="tags">
+                    {item.Tags.map((tag, index) => {
+                      return (
+                        <span className="tag" key={index}>
+                          {tag}
+                        </span>
+                      );
+                    })}
+                  </div>
+                  <a
+                    href={item.Behance}
+                    className="behance-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on Behance
+                  </a>
                 </div>
-                <a
-                  href={item.Behance}
-                  className="behance-link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View on Behance
-                </a>
+                <div className="port-image">
+                  <img src={item.img} alt={item.alt} />
+                </div>
               </div>
-              <div className="port-image">
-                <img src={item.img} alt={item.alt} />
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

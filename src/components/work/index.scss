@@ -2,8 +2,15 @@
 
 .portfolio-component {
   margin: 150px auto;
-  max-width: 1600px;
-  padding: 0 40px;
+  padding: 60px;
+
+  background: $brand-blue-04;
+  border-top: 1px solid $grey-62;
+
+  width: 100vw; /* make it 100% of the viewport width (vw) */
+  margin-left: calc(
+    (100% - 100vw) / 2
+  ); /* then remove the gap to the left of the container with this equation */
 
   @include for-phone-only {
     margin: 0 auto;
@@ -19,21 +26,32 @@
   }
 
   @include for-desktop-up {
-    margin: 250px auto;
+    margin: 50px auto;
+  }
+
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    @include for-phone-only {
-      grid-template-columns: 1fr;
+    .header-wrap {
+      margin: 40px 0;
+      text-align: center;
+      width: 100%;
     }
 
     h2 {
       color: $brand-blue;
-      font-family: "proxima_nova_bold_italic", Helvetica, Arial, sans-serif;
-      font-size: 5rem;
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 3rem;
+      margin-bottom: 0;
 
       @include for-phone-only {
         font-size: 3rem;
@@ -43,12 +61,20 @@
     .subtitle {
       color: $copy-60;
       display: block;
-      font-size: 1.2rem;
-      margin-bottom: 60px;
+      font-size: 1rem;
+      margin: 20px 0 35px;
 
       @include for-phone-only {
         margin-bottom: 0px;
       }
+    }
+
+    .title-bottom-border {
+      border: none;
+      border-top: 5px solid $grey-62;
+      height: 0px;
+      margin-bottom: 80px;
+      max-width: 75px;
     }
 
     .code-cta {
@@ -72,10 +98,18 @@
 
       @include for-phone-only {
         grid-template-columns: 1fr;
+        margin: 120px 0;
       }
 
       &:first-of-type {
         margin: 20px 0 60px 0;
+      }
+
+      &:last-of-type {
+        margin: 60px 0 0;
+        @include for-phone-only {
+          margin: 120px 0 0;
+        }
       }
 
       span {
@@ -83,15 +117,18 @@
       }
 
       .title {
-        font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-        font-size: 2rem;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
       }
 
       .description {
-        font-size: 1.2rem;
-        font-weight: 700;
+        color: $copy-60;
+        font-size: 1rem;
+        font-weight: 400;
         line-height: 1.5;
-        margin: 30px 0;
+        margin: 10px 0;
         max-width: 475px;
         width: 100%;
         padding-right: 20px;
@@ -106,6 +143,8 @@
 
       .tags {
         display: inline-flex;
+        margin-top: 10px;
+        align-items: center;
 
         @include for-phone-only {
           flex-wrap: wrap;
@@ -116,12 +155,14 @@
         }
 
         @include for-desktop-up {
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
+          max-width: 500px;
+          row-gap: 15px;
         }
 
         .tag {
-          background-color: $lime-10;
-          border: 1px solid $lime;
+          background-color: $grey-15;
+          border: 1px solid $copy-25;
           border-radius: 8px;
           color: $midnight;
           font-size: 0.75rem;
@@ -174,9 +215,9 @@
       a {
         color: $brand-blue;
         display: block;
-        font-size: 1.5rem;
-        margin-top: 40px;
-        width: 250px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        width: 220px;
         text-decoration: none;
         position: relative;
 

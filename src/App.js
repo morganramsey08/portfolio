@@ -26,10 +26,10 @@ function App() {
     <Router>
       <Wrapper>
         <Routes>
-          <Route key="homepage" exact element={<HomePage />} path={"/"} />
-          <Route key="about" element={<AboutPage />} exact path="/about" />
-          <Route key="about" element={<ResumePage />} exact path="/resume" />
-          <Route key="about" element={<ContactPage />} exact path="/contact" />
+          <Route key="homepage" element={<HomePage />} path={"/"} />
+          <Route key="about" element={<AboutPage />} path="/about" />
+          <Route key="resume" element={<ResumePage />} path="/resume" />
+          <Route key="contact" element={<ContactPage />} path="/contact" />
           <Route path="*" element={<FourOhFourPage />} />
         </Routes>
       </Wrapper>
