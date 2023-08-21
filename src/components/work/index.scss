@@ -161,9 +161,8 @@
         }
 
         .tag {
-          background-color: $grey-15;
-          border: 1px solid $copy-25;
-          border-radius: 8px;
+          background-color: $lime-26;
+          border-radius: 20px;
           color: $midnight;
           font-size: 0.75rem;
           margin-right: 15px;
@@ -206,9 +205,14 @@
           margin: 0px 0 100px auto;
         }
 
-        img {
+        a {
           border-radius: 10px;
           max-width: 100%;
+          display: block;
+          img {
+            border-radius: 10px;
+            max-width: 100%;
+          }
         }
       }
 
@@ -220,6 +224,14 @@
         width: 220px;
         text-decoration: none;
         position: relative;
+
+        &.img-link {
+          width: 100%;
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
 
         &::before {
           content: "";

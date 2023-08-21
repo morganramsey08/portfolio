@@ -42,7 +42,14 @@ const PortfolioWork = () => {
                   </a>
                 </div>
                 <div className="port-image">
-                  <img src={item.img} alt={item.alt} />
+                  <a
+                    href={item.Behance}
+                    className="img-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={item.img} alt={item.alt} />
+                  </a>
                 </div>
               </div>
             );
